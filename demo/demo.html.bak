@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="gbk" />
+<script src="../lib/seajs/src/seajs.js"></script>
+<script src="../lib/jquery/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<a href="data.txt" data-toggle="dialog">预览(ajax)</a><br/>
+<a href="data.txt" data-toggle="artdialog">请点击我（选择器方式拿到内容）</a>
+<script>
+seajs.use(['../dialog/src/dialog', '../artdialog/src/artdialog']);
+</script>
+</body>
+</html>
