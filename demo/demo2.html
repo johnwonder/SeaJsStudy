@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta charset="gbk" />
+<script src="../lib/seajs/src/seajs.js"></script>
+<script type="text/javascript">
+seajs.config({
+	base:"../lib",
+	alias:{
+		'jquery':'jquery/jquery.js'
+	}
+ });
+</script>
+</head>
+<body>
+<a href="data.txt" data-toggle="dialog">预览(ajax)</a><br/>
+<a href="data.txt" data-toggle="artdialog">请点击我（选择器方式拿到内容）</a>
+<script>
+seajs.use(['jquery'],function($){
+	console.log($);
+});
+seajs.use("main");
+
+</script>
+</body>
+</html>
